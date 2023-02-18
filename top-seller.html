@@ -596,83 +596,36 @@
                     <div class="container pb-6">
                         <div class="py-5">
                             <div class="row g-4 align-items-center">
-                                <div class="col"><h1 class="h3 m-0">Dashboard</h1></div>
+                                <div class="col"><h1 class="h3 m-0">General Reports List</h1></div>
                             </div>
                         </div>
-                        <div class="row g-4 g-xl-5">
-                            <div class="col-12 col-md-4 d-flex">
-                                <div class="card">
-                                    <div class="p-4">
-                                      <input
-                                        type="text"
-                                        placeholder="Start typing to search for orders"
-                                        class="form-control form-control--search mx-auto"
-                                        id="table-search"
-                                      />
+                        <div class="row g-4 g-xl-12">
+                            <div class="col-12 col-md-12  ">
+                                <div class="sa-example__body">
+                                    <div class="card">
+                                        <table class="sa-datatables-init" data-order='[[ 0, "asc" ]]'>
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Country</th>
+                                                    <th>Order Count</th>
+                                                    <th>Number of sales</th>
+                                                    <th>Cash Gain</th> 
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tiger Nixon</td>
+                                                    <td>Jordan</td>
+                                                    <td>2323</td>
+                                                    <td>89%</td>
+                                                    <td>Top 10</td> 
+                                                </tr> 
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="sa-divider"></div>
-                                    <table
-                                      class="sa-datatables-init text-nowrap"
-                                      data-order='[[ 1, "desc" ]]'
-                                      data-sa-search-input="#table-search"
-                                    >
-                                      <thead>
-                                        <tr>
-                                          <th class="w-min" data-orderable="false">
-                                            <input
-                                              type="checkbox"
-                                              class="form-check-input m-0 fs-exact-16 d-block"
-                                              aria-label="..."
-                                            />
-                                          </th>
-                                          <th>Number</th>
-                                          <th>Seller</th>
-                                          <th>Customer</th>
-                                          <th>Date</th>
-                                          <th>Paid</th>
-                                          <th>Status</th>
-                                          <th>Items</th>
-                                          <th>Total</th>
-                                          <th class="w-min" data-orderable="false"></th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <input
-                                              type="checkbox"
-                                              class="form-check-input m-0 fs-exact-16 d-block"
-                                              aria-label="..."
-                                            />
-                                          </td>
-                                          <a href="">
-                                            <td>Number</td>
-                                            <td>Seller</td>
-                                            <td>Customer</td>
-                                            <td>Date</td>
-                                            <td>Paid</td>
-                                            <td>Status</td>
-                                            <td>Items</td>
-                                            <td>Total</td>
-                                            <td class="d-flex">
-                                              <li>
-                                                <a class="dropdown-item" href="#"><i class="bi bi-pencil-square"></i></a>
-                                              </li>
-                                              <li>
-                                                <a class="dropdown-item text-danger" href="#"
-                                                  ><i class="bi bi-trash3"></i>
-                                                </a>
-                                              </li>
-                                            </td>
-                                          </a>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                            </div>
-                          
-                         
-                         
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>

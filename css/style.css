@@ -8485,6 +8485,9 @@ margin: right 5px;
   width:100%;
   max-width:100%;
 }
+li{
+  list-style: none;
+}
 /*
 // Custom
 */

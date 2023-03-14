@@ -73,7 +73,7 @@
                                             <span class="sa-nav__icon">
                                                 <i class="bi bi-cart"></i>
                                             </span>
-                                            <span class="sa-nav__title">Orders</span>
+                                            <span class="sa-nav__title">Refund Items </span>
                                                 <span class="sa-nav__menu-item-badge badge badge-sa-pill badge-sa-theme">8</span>
                                         </a>
                                         <ul class="sa-nav__menu sa-nav__menu--sub" data-sa-collapse-content="">
@@ -505,85 +505,159 @@
                 <!-- sa-app__body -->
                 <div id="top" class="sa-app__body">
                     <div class="mx-sm-2 px-2 px-sm-3 px-xxl-4 pb-6">
-                        <div class="container">
+                        <div class="container container--max--xl">
                             <div class="py-5">
                                 <div class="row g-4 align-items-center">
                                     <div class="col">
                                         <nav class="mb-2" aria-label="breadcrumb">
                                             <ol class="breadcrumb breadcrumb-sa-simple">
                                                 <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Orders</li>
+                                                <li class="breadcrumb-item"><a href="app-orders-list.html">Orders</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Refund Items  #80294</li>
                                             </ol>
                                         </nav>
-                                        <h1 class="h3 m-0">Reject & Refund Orders</h1>
-                                    </div> 
+                                        <h1 class="h3 m-0">Refund Items  #80294</h1>
+                                    </div>
+                                    <div class="col-auto d-flex">
+                                        <a href="#" class="btn btn-secondary me-3">Delete</a>
+                                        <a href="#" class="btn btn-primary me-3">Edit</a>
+                                        <a href="page-invoice.html" class="btn btn-primary ">Download</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="p-4">
-                                    <input
-                                        type="text"
-                                        placeholder="Start typing to search for orders"
-                                        class="form-control form-control--search mx-auto"
-                                        id="table-search"
-                                    />
+                            <div class="sa-page-meta mb-5">
+                                <div class="sa-page-meta__body">
+                                    <div class="sa-page-meta__list">
+                                        <div class="sa-page-meta__item">October 7, 2020 at 9:08 pm</div>
+                                        <div class="sa-page-meta__item">6 items</div>
+                                        <div class="sa-page-meta__item">Total $5,882.00</div>
+                                        <div class="sa-page-meta__item d-flex align-items-center fs-6">
+                                            <span class="badge badge-sa-success me-2">Paid</span>
+                                            <span class="badge badge-sa-warning me-2">Partially Fulfilled</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="sa-divider"></div>
-                                <table class="sa-datatables-init text-nowrap" data-order='[[ 1, "desc" ]]' data-sa-search-input="#table-search">
-                                    <thead>
-                                        <tr>
-                                            <th class="w-min" data-orderable="false">
-                                                <input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." />
-                                            </th>
-                                            <th>image</th>
-                                            <th>Number</th>
-                                            <th>Date</th>
-                                            <th>Customer</th>
-                                            <th>Paid</th>
-                                            <th>Status</th>
-                                            <th>Items</th>
-                                            <th>Total</th>
-                                            <th class="w-min" data-orderable="false"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="checkbox" class="form-check-input m-0 fs-exact-16 d-block" aria-label="..." /></td>
-                                            <td class="">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="images/products/product-7-40x40.jpg" class="me-4" width="40" height="40" alt="" /> 
-                                                </div>
-                                            </td>
-                                            <td><a href="app-refund.html" class="text-reset">#3201</a></td>
-                                            <td>June 26, 2021</td>
-                                            <td><a href="app-customer.html" class="text-reset">Jessica Moore</a></td>
-                                            <td>
-                                                <div class="d-flex fs-6"><div class="badge badge-sa-success">Yes</div></div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex fs-6"><div class="badge badge-sa-danger">New</div></div>
-                                            </td>
-                                            <td>3 items</td>
-                                            <td>
-                                                <div class="sa-price">
-                                                    <span class="sa-price__symbol">$</span>
-                                                    <span class="sa-price__integer">200</span>
-                                                    <span class="sa-price__decimal">.00</span>
-                                                </div>
-                                            </td>
-                                            <td class="d-flex">
-                                                <li>
-                                                  <a class="dropdown-item" href="app-order.html"><i class="bi bi-pencil-square"></i></a>
-                                                </li>
-                                                <li>
-                                                  <a class="dropdown-item text-danger" href="#"
-                                                    ><i class="bi bi-trash3"></i>
-                                                  </a>
-                                                </li>
-                                              </td>
-                                        </tr> 
-                                    </tbody>
-                                </table>
+                            </div>
+                            <div class="sa-entity-layout" data-sa-container-query='{"920":"sa-entity-layout--size--md"}'>
+                                <div class="sa-entity-layout__body">
+                                    <div class="sa-entity-layout__main">
+                                        <div class="sa-card-area">
+                                            <textarea class="sa-card-area__area" rows="2" placeholder="Notes about order"></textarea>
+                                            <div class="sa-card-area__card">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="1em"
+                                                    height="1em"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="feather feather-edit"
+                                                >
+                                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="card mt-5">
+                                            <div class="card-body px-5 py-4 d-flex align-items-center justify-content-between">
+                                                <h2 class="mb-0 fs-exact-18 me-4">Items</h2>
+                                                <div class="text-muted fs-exact-14"><a href="#">Edit items</a></div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="sa-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td >
+                                                                <div class="col-6 col-md-6 mr-2">
+                                                                  <a href="">  <img src="images/card-image-1-640x360.jpg" class="imagewidth" alt=""> </a>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-end">
+                                                                <div class="sa-price">
+                                                                    <span class="sa-price__symbol">$</span>
+                                                                    <span class="sa-price__integer">849</span>
+                                                                    <span class="sa-price__decimal">.00</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-end">1</td>
+                                                            <td class="text-end">
+                                                                <div class="sa-price">
+                                                                    <span class="sa-price__symbol">$</span>
+                                                                    <span class="sa-price__integer">849</span>
+                                                                    <span class="sa-price__decimal">.00</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  >
+                                                                <div class="col-6 col-md-6 mr-2">
+                                                                    <a href="">  <img src="images/card-image-1-640x360.jpg" class="imagewidth" alt=""> </a>
+
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-end">
+                                                                <div class="sa-price">
+                                                                    <span class="sa-price__symbol">$</span>
+                                                                    <span class="sa-price__integer">699</span> 
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-end">2</td>
+                                                            <td class="text-end">
+                                                                <div class="sa-price">
+                                                                    <span class="sa-price__symbol">$</span>
+                                                                    <span class="sa-price__integer">1,398</span> 
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="min-w-20x">
+                                                                <div class="d-flex align-items-center">
+                                                                    <img
+                                                                        src="images/products/product-16-40x40.jpg"
+                                                                        class="me-4"
+                                                                        width="40"
+                                                                        height="40"
+                                                                        alt=""
+                                                                    />
+                                                                    <a href="app-product.html" class="text-reset">Twin Exhaust Pipe From Brandix Z54</a>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-end">
+                                                                <div class="sa-price">
+                                                                    <span class="sa-price__symbol">$</span>
+                                                                    <span class="sa-price__integer">1,210</span>
+                                                                    <span class="sa-price__decimal">.00</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-end">3</td>
+                                                            <td class="text-end">
+                                                                <div class="sa-price">
+                                                                    <span class="sa-price__symbol">$</span>
+                                                                    <span class="sa-price__integer">3,630</span>
+                                                                    <span class="sa-price__decimal">.00</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                   
+                                                        <tr>
+                                                            <td colspan="3">Total</td>
+                                                            <td class="text-end">
+                                                                <div class="sa-price">
+                                                                    <span class="sa-price__symbol">$</span>
+                                                                    <span class="sa-price__integer">5,882</span>
+                                                                    <span class="sa-price__decimal">.00</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
